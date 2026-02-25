@@ -1,0 +1,288 @@
+<!-- contact.html - Contact Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Christian Legacy Makers (CLM)</title>
+    <meta name="description" content="Get in touch with Christian Legacy Makers. We'd love to hear from you.">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="main-header" id="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">✝</span>
+                    <span class="logo-text">CLM</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="impact.html">Our Impact</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="donate.html" class="btn-donate-nav">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Contact</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-column" data-animate="slide-right">
+                    <h2>Get In Touch</h2>
+                    <p class="lead">We'd love to hear from you. Reach out with questions, partnership inquiries, or just to say hello.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:christianlegacymakers@gmail.com">christianlegacymakers@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-details">
+                                <h4>Location</h4>
+                                <p>Wakiso District<br>P.O. Box, Wakiso, Uganda</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div class="method-details">
+                                <h4>Phone</h4>
+                                <p>+256 7XX XXX XXX</p>
+                                <small>Available Mon-Fri, 9AM-5PM EAT</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-connect">
+                        <h4>Connect With Us</h4>
+                        <div class="social-links large">
+                            <a href="#" aria-label="Facebook">Facebook</a>
+                            <a href="#" aria-label="Twitter">Twitter</a>
+                            <a href="#" aria-label="Instagram">Instagram</a>
+                            <a href="#" aria-label="YouTube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-column" data-animate="slide-left">
+                    <div class="form-container">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm" class="clm-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Full Name *</label>
+                                    <input type="text" id="contact-name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Email Address *</label>
+                                    <input type="email" id="contact-email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number</label>
+                                <input type="tel" id="contact-phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject">Subject *</label>
+                                <select id="contact-subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="donation">Donation Question</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="volunteer">Volunteering</option>
+                                    <option value="media">Media Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message *</label>
+                                <textarea id="contact-message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">Send Message</button>
+                        </form>
+                        <div id="formSuccess" class="form-success hidden">
+                            <h4>Thank You!</h4>
+                            <p>Your message has been sent successfully. We'll get back to you within 48 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Where to Find Us</h2>
+                <p class="section-subtitle">Operating in Wakiso District, Uganda</p>
+            </div>
+            <div class="map-embed" data-animate="fade-up">
+                <div class="map-fallback">
+                    <div class="map-info-box">
+                        <h3>Christian Legacy Makers</h3>
+                        <p><strong>Address:</strong> P.O. Box, Wakiso, Uganda</p>
+                        <p><strong>District:</strong> Wakiso District</p>
+                        <p><strong>Country:</strong> Uganda</p>
+                        <p><strong>Email:</strong> christianlegacymakers@gmail.com</p>
+                        <a href="https://maps.google.com/?q=Wakiso+District+Uganda" target="_blank" class="btn btn-outline">Open in Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+            <div class="faq-container" data-animate="fade-up">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How can I donate to CLM?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can donate online through our secure donation page, via bank transfer, or by mobile money. Visit our <a href="donate.html">Donate page</a> for all options.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is my donation tax-deductible?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>CLM is a registered Community Based Organization in Uganda. Tax deductibility depends on your country's regulations. Please consult your tax advisor or contact us for specific documentation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I visit CLM projects in Uganda?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We welcome visitors and volunteers. Please contact us at least 4 weeks in advance to arrange a visit to our programs in Wakiso District.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do I become a volunteer?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Fill out the volunteer application form on our <a href="get-involved.html">Get Involved page</a>. We'll review your application and contact you about available opportunities.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How is CLM funded?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>CLM is funded through individual donations, corporate partnerships, grants, and fundraising events. We maintain transparency in our financial management and publish annual reports.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>Ready to Support Our Work?</h2>
+                <p>Your contribution helps us continue transforming lives in Wakiso District.</p>
+                <div class="cta-buttons">
+                    <a href="donate.html" class="btn btn-white btn-lg">Donate Now</a>
+                    <a href="get-involved.html" class="btn btn-outline-white btn-lg">Get Involved</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">✝</span>
+                        <span>Christian Legacy Makers</span>
+                    </a>
+                    <p>Raising a generation of empowered, educated, and spiritually grounded children and mothers.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">t</a>
+                        <a href="#" aria-label="Instagram">i</a>
+                        <a href="#" aria-label="YouTube">y</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="impact.html">Our Impact</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#literacy">Literacy</a></li>
+                        <li><a href="programs.html#empowerment">Empowerment</a></li>
+                        <li><a href="programs.html#discipleship">Discipleship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><strong>Email:</strong> christianlegacymakers@gmail.com</p>
+                    <p><strong>Location:</strong> Wakiso District, Uganda</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2021-2026 Christian Legacy Makers (CLM). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+/* css/responsive.css - Responsive Design */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
+    :root {
+        --container-padding: 1.25rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+    /* Navigation */
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--clm-white);
+        flex-direction: column;
+        padding: var(--space-md);
+        gap: var(--space-sm);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-menu a {
+        padding: var(--space-sm);
+        border-bottom: 1px solid var(--clm-gray-light);
+    }
+    
+    .nav-menu a::after {
+        display: none;
+    }
+    
+    .btn-donate-nav {
+        margin-top: var(--space-sm);
+        text-align: center;
+    }
+    
+    /* Hero */
+    .hero {
+        height: auto;
+        min-height: 70vh;
+        padding: var(--space-xl) 0;
+    }
+    
+    /* Grids */
+    .led-grid,
+    .programs-grid,
+    .updates-grid,
+    .stories-grid,
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Mission stats */
+    .mission-stats {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Program detail */
+    .program-content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-impact-box {
+        position: static;
+        order: -1;
+        margin-bottom: var(--space-md);
+    }
+    
+    /* Donation */
+    .donation-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .donation-sidebar {
+        order: -1;
+    }
+    
+    /* Ways to give */
+    .ways-to-give-grid,
+    .partnership-tiers {
+        grid-template-columns: 1fr;
+    }
+    
+    .give-card.featured,
+    .tier-card.featured {
+        transform: none;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+    :root {
+        --space-lg: 3rem;
+        --space-xl: 4rem;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    
+    /* Hero */
+    .hero-cta {
+        flex-direction: column;
+    }
+    
+    .hero-cta .btn {
+        width: 100%;
+    }
+    
+    /* Update cards */
+    .update-card {
+        flex-direction: column;
+    }
+    
+    .update-date {
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        gap: 0.5rem;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    /* Mission vision */
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Goals */
+    .goals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Leadership */
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Stats */
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Testimonials */
+    .testimonial-nav {
+        gap: var(--space-xs);
+    }
+    
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Events */
+    .event-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Donation form */
+    .amount-presets {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .payment-methods {
+        flex-direction: column;
+    }
+    
+    .form-navigation {
+        flex-direction: column;
+    }
+    
+    /* Other ways */
+    .other-ways-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* CTA buttons */
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+    :root {
+        --container-padding: 1rem;
+    }
+    
+    /* Stats grid single column */
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Amount presets 2 columns */
+    .amount-presets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Reduce font sizes */
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    /* Program badges full width */
+    .program-badge {
+        display: block;
+        text-align: center;
+    }
+    
+    /* Impact stats stack */
+    .impact-stat {
+        text-align: center;
+    }
+    
+    /* Form rows stack */
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Prayer form */
+    .prayer-form .form-row {
+        flex-direction: column;
+    }
+    
+    /* Legal items stack */
+    .legal-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.25rem;
+    }
+}
+
+/* Height-based media queries for landscape phones */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 120vh;
+    }
+    
+    .nav-menu {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+/* Print styles */
+@media print {
+    .main-header,
+    .cta-section,
+    .main-footer,
+    .mobile-menu-toggle {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+    
+    .page-break {
+        page-break-before: always;
+    }
+}
+
+/* High resolution screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimize images for retina displays */
+    img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Dark mode support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+    /* Currently not implemented - site uses fixed white/orange/black scheme */
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+    outline: 3px solid var(--clm-orange);
+    outline-offset: 2px;
+}
+
+/* Selection color */
+::selection {
+    background: var(--clm-orange);
+    color: var(--clm-white);
+}

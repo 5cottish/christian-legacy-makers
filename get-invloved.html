@@ -1,0 +1,324 @@
+<!-- get-involved.html - Get Involved Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - Christian Legacy Makers (CLM)</title>
+    <meta name="description" content="Donate, volunteer, or partner with CLM to transform lives in Uganda.">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="main-header" id="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">✝</span>
+                    <span class="logo-text">CLM</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="impact.html">Our Impact</a></li>
+                    <li><a href="get-involved.html" class="active">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html" class="btn-donate-nav">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get Involved</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Get Involved</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Ways to Give -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Ways to Give</h2>
+                <p class="section-subtitle">Choose how you want to make a difference</p>
+            </div>
+            <div class="ways-to-give-grid">
+                <div class="give-card featured" data-animate="fade-up">
+                    <div class="give-icon">💝</div>
+                    <h3>Make a Donation</h3>
+                    <p>Support our programs with a one-time or monthly gift. 100% of donations go directly to program costs in Wakiso District.</p>
+                    <ul class="give-options">
+                        <li>$25 - School supplies for 1 child</li>
+                        <li>$50 - Monthly reading club support</li>
+                        <li>$100 - Vocational training materials</li>
+                        <li>$250 - Full program sponsorship</li>
+                    </ul>
+                    <a href="donate.html" class="btn btn-primary btn-block">Donate Now</a>
+                </div>
+                <div class="give-card" data-animate="fade-up" data-delay="100">
+                    <div class="give-icon">👶</div>
+                    <h3>Sponsor a Child</h3>
+                    <p>Provide comprehensive support for a child's education, nutrition, and discipleship for $40/month.</p>
+                    <a href="donate.html?type=sponsorship" class="btn btn-outline btn-block">Learn More</a>
+                </div>
+                <div class="give-card" data-animate="fade-up" data-delay="200">
+                    <div class="give-icon">🤝</div>
+                    <h3>Corporate Partnership</h3>
+                    <p>Partner with CLM as a business to support community development and fulfill CSR goals.</p>
+                    <a href="#partnership" class="btn btn-outline btn-block">Partner With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section class="section-padding bg-light" id="volunteer">
+        <div class="container">
+            <div class="two-column">
+                <div class="column-content" data-animate="slide-right">
+                    <h2>Volunteer With Us</h2>
+                    <p class="lead">Share your skills and time to support our mission in Wakiso District.</p>
+                    
+                    <div class="volunteer-opportunities">
+                        <div class="opp-item">
+                            <h4>📚 Literacy Tutor</h4>
+                            <p>Help children improve reading skills in our community reading clubs.</p>
+                        </div>
+                        <div class="opp-item">
+                            <h4>💼 Skills Trainer</h4>
+                            <p>Teach vocational skills like tailoring, crafts, or business management.</p>
+                        </div>
+                        <div class="opp-item">
+                            <h4>✝ Mentorship</h4>
+                            <p>Provide spiritual guidance and life coaching to young mothers or youth.</p>
+                        </div>
+                        <div class="opp-item">
+                            <h4>📸 Communications</h4>
+                            <p>Help document our work through photography, writing, or social media.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-form" data-animate="slide-left">
+                    <div class="form-container">
+                        <h3>Volunteer Application</h3>
+                        <form id="volunteerForm" class="clm-form">
+                            <div class="form-group">
+                                <label for="vol-name">Full Name *</label>
+                                <input type="text" id="vol-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-email">Email Address *</label>
+                                <input type="email" id="vol-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-phone">Phone Number</label>
+                                <input type="tel" id="vol-phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-area">Area of Interest *</label>
+                                <select id="vol-area" name="interest" required>
+                                    <option value="">Select an option</option>
+                                    <option value="literacy">Literacy/Education</option>
+                                    <option value="empowerment">Empowerment/Skills Training</option>
+                                    <option value="discipleship">Discipleship/Mentorship</option>
+                                    <option value="communications">Communications/Media</option>
+                                    <option value="admin">Administration</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-message">Why do you want to volunteer?</label>
+                                <textarea id="vol-message" name="message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="section-padding" id="partnership">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Corporate Partnership</h2>
+                <p class="section-subtitle">Join us in creating sustainable community impact</p>
+            </div>
+            <div class="partnership-tiers">
+                <div class="tier-card" data-animate="fade-in">
+                    <div class="tier-header">
+                        <h3>Community Partner</h3>
+                        <div class="tier-amount">$1,000/year</div>
+                    </div>
+                    <ul class="tier-benefits">
+                        <li>Logo on website and materials</li>
+                        <li>Quarterly impact reports</li>
+                        <li>Recognition at annual event</li>
+                    </ul>
+                    <a href="contact.html?subject=partnership" class="btn btn-outline btn-block">Inquire</a>
+                </div>
+                <div class="tier-card featured" data-animate="fade-in" data-delay="100">
+                    <div class="tier-badge">Popular</div>
+                    <div class="tier-header">
+                        <h3>Impact Partner</h3>
+                        <div class="tier-amount">$5,000/year</div>
+                    </div>
+                    <ul class="tier-benefits">
+                        <li>All Community Partner benefits</li>
+                        <li>Named program sponsorship</li>
+                        <li>Site visit opportunity</li>
+                        <li>Employee engagement activities</li>
+                    </ul>
+                    <a href="contact.html?subject=partnership" class="btn btn-primary btn-block">Inquire</a>
+                </div>
+                <div class="tier-card" data-animate="fade-in" data-delay="200">
+                    <div class="tier-header">
+                        <h3>Legacy Partner</h3>
+                        <div class="tier-amount">$10,000+/year</div>
+                    </div>
+                    <ul class="tier-benefits">
+                        <li>All Impact Partner benefits</li>
+                        <li>Strategic advisory role</li>
+                        <li>Co-branded initiatives</li>
+                        <li>Annual partnership report</li>
+                    </ul>
+                    <a href="contact.html?subject=partnership" class="btn btn-outline btn-block">Inquire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Partner -->
+    <section class="section-padding bg-dark">
+        <div class="container">
+            <div class="prayer-section text-center light" data-animate="fade-up">
+                <div class="prayer-icon">🙏</div>
+                <h2>Become a Prayer Partner</h2>
+                <p class="lead">Join our prayer network and receive monthly prayer updates from the field.</p>
+                <form id="prayerForm" class="prayer-form">
+                    <div class="form-row">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-white">Join Prayer List</button>
+                    </div>
+                </form>
+                <p class="prayer-note">"Prayer is the foundation of everything we do at CLM."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Fundraising Events</h2>
+                <p class="section-subtitle">Join us at upcoming events</p>
+            </div>
+            <div class="events-list">
+                <div class="event-row" data-animate="fade-in">
+                    <div class="event-date-box">
+                        <span class="month">MAY</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Annual Fundraising Dinner</h3>
+                        <p>Wakiso District | Join us for an evening of stories, celebration, and support for CLM's programs.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline">Register</a>
+                </div>
+                <div class="event-row" data-animate="fade-in" data-delay="100">
+                    <div class="event-date-box">
+                        <span class="month">JUL</span>
+                        <span class="day">20</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Back-to-School Campaign Launch</h3>
+                        <p>Online & In-Person | Help us prepare 500 children for the new school year.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>Ready to Make a Difference?</h2>
+                <p>Every contribution—whether time, money, or prayer—helps us transform lives.</p>
+                <div class="cta-buttons">
+                    <a href="donate.html" class="btn btn-white btn-lg">Donate Now</a>
+                    <a href="contact.html" class="btn btn-outline-white btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">✝</span>
+                        <span>Christian Legacy Makers</span>
+                    </a>
+                    <p>Raising a generation of empowered, educated, and spiritually grounded children and mothers.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">t</a>
+                        <a href="#" aria-label="Instagram">i</a>
+                        <a href="#" aria-label="YouTube">y</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="impact.html">Our Impact</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#literacy">Literacy</a></li>
+                        <li><a href="programs.html#empowerment">Empowerment</a></li>
+                        <li><a href="programs.html#discipleship">Discipleship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><strong>Email:</strong> christianlegacymakers@gmail.com</p>
+                    <p><strong>Location:</strong> Wakiso District, Uganda</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2021-2026 Christian Legacy Makers (CLM). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>

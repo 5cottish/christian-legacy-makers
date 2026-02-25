@@ -1,0 +1,412 @@
+<!-- donate.html - Dedicated Donation Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Christian Legacy Makers (CLM)</title>
+    <meta name="description" content="Support Christian Legacy Makers. Your donation helps empower children and mothers in Uganda through literacy, empowerment, and discipleship programs.">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="main-header" id="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">✝</span>
+                    <span class="logo-text">CLM</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="impact.html">Our Impact</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html" class="btn-donate-nav active">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Donation Hero -->
+    <section class="donation-hero">
+        <div class="container">
+            <div class="donation-hero-content" data-animate="fade-up">
+                <h1>Make a Difference Today</h1>
+                <p class="lead">Your generosity empowers children and mothers in Wakiso District, Uganda through education, skills training, and spiritual growth.</p>
+                <div class="trust-badges">
+                    <span class="badge">✓ Secure Donation</span>
+                    <span class="badge">✓ Tax Receipt</span>
+                    <span class="badge">✓ 100% to Programs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section class="section-padding donation-section">
+        <div class="container">
+            <div class="donation-container">
+                <!-- Donation Form -->
+                <div class="donation-form-wrapper" data-animate="slide-right">
+                    <form id="donationForm" class="donation-form">
+                        <!-- Step 1: Amount -->
+                        <div class="form-step active" id="step1">
+                            <h2>Choose Your Impact</h2>
+                            <p class="step-description">Select an amount or enter a custom donation</p>
+                            
+                            <div class="donation-type-toggle">
+                                <button type="button" class="toggle-btn active" data-type="one-time">One-time</button>
+                                <button type="button" class="toggle-btn" data-type="monthly">Monthly</button>
+                            </div>
+
+                            <div class="amount-presets">
+                                <button type="button" class="amount-btn" data-amount="25">$25</button>
+                                <button type="button" class="amount-btn" data-amount="50">$50</button>
+                                <button type="button" class="amount-btn active" data-amount="100">$100</button>
+                                <button type="button" class="amount-btn" data-amount="250">$250</button>
+                                <button type="button" class="amount-btn" data-amount="500">$500</button>
+                            </div>
+
+                            <div class="custom-amount">
+                                <label for="customAmount">Custom Amount ($)</label>
+                                <input type="number" id="customAmount" name="amount" min="5" placeholder="Enter amount" value="100">
+                            </div>
+
+                            <div class="designation">
+                                <label for="programDesignation">Designate Your Gift (Optional)</label>
+                                <select id="programDesignation" name="designation">
+                                    <option value="general">Where Most Needed</option>
+                                    <option value="literacy">Literacy Programs</option>
+                                    <option value="empowerment">Empowerment Programs</option>
+                                    <option value="discipleship">Discipleship Programs</option>
+                                    <option value="sponsorship">Child Sponsorship</option>
+                                </select>
+                            </div>
+
+                            <div class="impact-preview" id="impactPreview">
+                                <h4>Your Impact</h4>
+                                <p id="impactText">$100 provides school supplies for 4 children for one term.</p>
+                            </div>
+
+                            <button type="button" class="btn btn-primary btn-block btn-lg next-step">Continue</button>
+                        </div>
+
+                        <!-- Step 2: Personal Info -->
+                        <div class="form-step" id="step2">
+                            <h2>Your Information</h2>
+                            <p class="step-description">We need a few details to process your donation</p>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="donorFirstName">First Name *</label>
+                                    <input type="text" id="donorFirstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="donorLastName">Last Name *</label>
+                                    <input type="text" id="donorLastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="donorEmail">Email Address *</label>
+                                <input type="email" id="donorEmail" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="donorPhone">Phone Number</label>
+                                <input type="tel" id="donorPhone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="donorCountry">Country *</label>
+                                <select id="donorCountry" name="country" required>
+                                    <option value="">Select country</option>
+                                    <option value="UG">Uganda</option>
+                                    <option value="US">United States</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="giftAid" id="giftAid">
+                                    <span class="checkmark"></span>
+                                    Add Gift Aid (UK taxpayers only)
+                                </label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" checked>
+                                    <span class="checkmark"></span>
+                                    Keep me updated on CLM's work
+                                </label>
+                            </div>
+
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-outline prev-step">← Back</button>
+                                <button type="button" class="btn btn-primary next-step">Continue →</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Payment -->
+                        <div class="form-step" id="step3">
+                            <h2>Payment Details</h2>
+                            <p class="step-description">Secure payment processing</p>
+                            
+                            <div class="payment-methods">
+                                <div class="payment-method active" data-method="card">
+                                    <span class="method-icon">💳</span>
+                                    <span>Card</span>
+                                </div>
+                                <div class="payment-method" data-method="mobile">
+                                    <span class="method-icon">📱</span>
+                                    <span>Mobile Money</span>
+                                </div>
+                                <div class="payment-method" data-method="bank">
+                                    <span class="method-icon">🏦</span>
+                                    <span>Bank Transfer</span>
+                                </div>
+                            </div>
+
+                            <!-- Card Payment Form -->
+                            <div class="payment-form card-form active">
+                                <div class="form-group">
+                                    <label for="cardNumber">Card Number *</label>
+                                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="cardExpiry">Expiry Date *</label>
+                                        <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cardCvc">CVC *</label>
+                                        <input type="text" id="cardCvc" placeholder="123" maxlength="4">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardName">Name on Card *</label>
+                                    <input type="text" id="cardName" placeholder="John Doe">
+                                </div>
+                            </div>
+
+                            <!-- Mobile Money Form -->
+                            <div class="payment-form mobile-form">
+                                <div class="form-group">
+                                    <label for="mobileProvider">Provider *</label>
+                                    <select id="mobileProvider">
+                                        <option value="">Select provider</option>
+                                        <option value="mtn">MTN Mobile Money</option>
+                                        <option value="airtel">Airtel Money</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobileNumber">Mobile Money Number *</label>
+                                    <input type="tel" id="mobileNumber" placeholder="+256 7XX XXX XXX">
+                                </div>
+                            </div>
+
+                            <!-- Bank Transfer Info -->
+                            <div class="payment-form bank-form">
+                                <div class="bank-details">
+                                    <h4>Bank Transfer Details</h4>
+                                    <p><strong>Bank:</strong> [Bank Name]</p>
+                                    <p><strong>Account Name:</strong> Christian Legacy Makers</p>
+                                    <p><strong>Account Number:</strong> [Account Number]</p>
+                                    <p><strong>Swift Code:</strong> [Swift Code]</p>
+                                    <p class="note">Please use your email as reference and email us the transfer receipt.</p>
+                                </div>
+                            </div>
+
+                            <div class="donation-summary">
+                                <h4>Donation Summary</h4>
+                                <div class="summary-row">
+                                    <span>Amount:</span>
+                                    <strong id="summaryAmount">$100.00</strong>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Frequency:</span>
+                                    <strong id="summaryFrequency">One-time</strong>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Designation:</span>
+                                    <strong id="summaryDesignation">Where Most Needed</strong>
+                                </div>
+                                <div class="summary-row total">
+                                    <span>Total Today:</span>
+                                    <strong id="summaryTotal">$100.00</strong>
+                                </div>
+                            </div>
+
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-outline prev-step">← Back</button>
+                                <button type="submit" class="btn btn-primary btn-lg" id="submitDonation">Complete Donation</button>
+                            </div>
+
+                            <div class="secure-note">
+                                <span>🔒</span> Secured by SSL encryption. Your information is safe.
+                            </div>
+                        </div>
+
+                        <!-- Success Step -->
+                        <div class="form-step success-step" id="stepSuccess">
+                            <div class="success-icon">✓</div>
+                            <h2>Thank You!</h2>
+                            <p class="success-message">Your donation has been received successfully. A confirmation email has been sent to <span id="successEmail"></span>.</p>
+                            <div class="success-details">
+                                <p><strong>Amount:</strong> <span id="successAmount"></span></p>
+                                <p><strong>Reference:</strong> <span id="successReference">CLM-2026-XXXX</span></p>
+                            </div>
+                            <p class="success-note">Your generosity is making a real difference in Wakiso District. Thank you for partnering with us!</p>
+                            <a href="index.html" class="btn btn-primary btn-lg">Return to Homepage</a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Sidebar Info -->
+                <div class="donation-sidebar" data-animate="slide-left">
+                    <div class="sidebar-card">
+                        <h3>Why Donate to CLM?</h3>
+                        <ul class="benefits-list">
+                            <li>✓ 100% of donations go directly to programs</li>
+                            <li>✓ Local, community-driven approach</li>
+                            <li>✓ Transparent financial reporting</li>
+                            <li>✓ Holistic transformation (LED Framework)</li>
+                            <li>✓ Registered non-profit organization</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card impact-card">
+                        <h3>Your Impact</h3>
+                        <div class="impact-item">
+                            <span class="impact-amount">$25</span>
+                            <p>School supplies for 1 child for a term</p>
+                        </div>
+                        <div class="impact-item">
+                            <span class="impact-amount">$50</span>
+                            <p>Monthly reading club materials</p>
+                        </div>
+                        <div class="impact-item">
+                            <span class="impact-amount">$100</span>
+                            <p>Vocational training for 1 mother</p>
+                        </div>
+                        <div class="impact-item">
+                            <span class="impact-amount">$250</span>
+                            <p>Start-up kit for a small business</p>
+                        </div>
+                        <div class="impact-item">
+                            <span class="impact-amount">$500</span>
+                            <p>Sponsor a child's full year of support</p>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card testimonial-card">
+                        <blockquote>
+                            "Thanks to CLM donors, I learned to read and now help teach other children in my village."
+                        </blockquote>
+                        <cite>— Sarah, 12, Literacy Program Beneficiary</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Ways -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Other Ways to Give</h2>
+                <p class="section-subtitle">Explore additional giving options</p>
+            </div>
+            <div class="other-ways-grid">
+                <div class="way-card" data-animate="fade-in">
+                    <div class="way-icon">👶</div>
+                    <h3>Child Sponsorship</h3>
+                    <p>Sponsor a child's education, nutrition, and discipleship for $40/month.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="way-card" data-animate="fade-in" data-delay="100">
+                    <div class="way-icon">🏢</div>
+                    <h3>Corporate Giving</h3>
+                    <p>Partner with us through CSR initiatives and employee engagement.</p>
+                    <a href="get-involved.html#partnership" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="way-card" data-animate="fade-in" data-delay="200">
+                    <div class="way-icon">🎁</div>
+                    <h3>Legacy Giving</h3>
+                    <p>Include CLM in your will and create an eternal impact.</p>
+                    <a href="contact.html?subject=legacy" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">✝</span>
+                        <span>Christian Legacy Makers</span>
+                    </a>
+                    <p>Raising a generation of empowered, educated, and spiritually grounded children and mothers.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">t</a>
+                        <a href="#" aria-label="Instagram">i</a>
+                        <a href="#" aria-label="YouTube">y</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="impact.html">Our Impact</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#literacy">Literacy</a></li>
+                        <li><a href="programs.html#empowerment">Empowerment</a></li>
+                        <li><a href="programs.html#discipleship">Discipleship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><strong>Email:</strong> christianlegacymakers@gmail.com</p>
+                    <p><strong>Location:</strong> Wakiso District, Uganda</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2021-2026 Christian Legacy Makers (CLM). All rights reserved.</p>
+                <p>Registered Community Based Organization in Wakiso District, Uganda</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>
